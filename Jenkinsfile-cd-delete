@@ -1,0 +1,22 @@
+pipeline {
+    agent any
+    
+    environment {
+        AWS_DEFAULT_REGION="ap-south-1"
+        AWS_CREDS=credentials('aws-creds')
+    }
+
+    stages {
+        stage('Git Checkout') {
+            steps {
+                git branch: 'feature', credentialsId: 'git-creds', url: 'https://github.com/TechITFactoryb01/online-boutique-kubernetes-manifests.git'
+            }
+        }       
+        
+        stage('Deleting Application') {
+            steps {
+                sh 'kubectl delete -f kubernetes-manifests.yaml'
+            }
+        }
+    }
+}
