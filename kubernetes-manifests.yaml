@@ -47,7 +47,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: techitfactoryb01/test-repo1:emailservice-10.0
+        image: techitfactoryb01/test-repo1:emailservice-11.0
         ports:
         - containerPort: 8080
         env:
@@ -112,7 +112,7 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: techitfactoryb01/test-repo1:checkoutservice-10.0
+          image: techitfactoryb01/test-repo1:checkoutservice-11.0
           ports:
           - containerPort: 5050
           readinessProbe:
@@ -186,7 +186,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: techitfactoryb01/test-repo1:recommendationservice-10.0
+        image: techitfactoryb01/test-repo1:recommendationservice-11.0
         ports:
         - containerPort: 8080
         readinessProbe:
@@ -255,7 +255,7 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: techitfactoryb01/test-repo1:frontend-10.0
+          image: techitfactoryb01/test-repo1:frontend-11.0
           ports:
           - containerPort: 8080
           readinessProbe:
@@ -364,7 +364,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: techitfactoryb01/test-repo1:paymentservice-10.0
+        image: techitfactoryb01/test-repo1:paymentservice-11.0
         ports:
         - containerPort: 50051
         env:
@@ -428,7 +428,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: techitfactoryb01/test-repo1:productcatalogservice-10.0
+        image: techitfactoryb01/test-repo1:productcatalogservice-11.0
         ports:
         - containerPort: 3550
         env:
@@ -492,7 +492,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: techitfactoryb01/test-repo1:cartservice-10.0
+        image: techitfactoryb01/test-repo1:cartservice-11.0
         ports:
         - containerPort: 7070
         env:
@@ -584,7 +584,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: techitfactoryb01/test-repo1:loadgenerator-10.0
+        image: techitfactoryb01/test-repo1:loadgenerator-11.0
         env:
         - name: FRONTEND_ADDR
           value: "frontend:80"
@@ -627,7 +627,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: techitfactoryb01/test-repo1:currencyservice-10.0
+        image: techitfactoryb01/test-repo1:currencyservice-11.0
         ports:
         - name: grpc
           containerPort: 7000
@@ -691,7 +691,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: techitfactoryb01/test-repo1:shippingservice-10.0
+        image: techitfactoryb01/test-repo1:shippingservice-11.0
         ports:
         - containerPort: 50051
         env:
@@ -821,7 +821,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: techitfactoryb01/test-repo1:adservice-10.0
+        image: techitfactoryb01/test-repo1:adservice-11.0
         ports:
         - containerPort: 9555
         env:
