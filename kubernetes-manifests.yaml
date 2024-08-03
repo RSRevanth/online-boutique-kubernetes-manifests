@@ -47,7 +47,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: revanth77/revanth77:emailservice-4.0
+        image: revanth77/revanth77:emailservice-10.0
         ports:
         - containerPort: 8080
         env:
@@ -112,7 +112,7 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: revanth77/revanth77:checkoutservice-4.0
+          image: revanth77/revanth77:checkoutservice-10.0
           ports:
           - containerPort: 5050
           readinessProbe:
@@ -186,7 +186,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: revanth77/revanth77:recommendationservice-4.0
+        image: revanth77/revanth77:recommendationservice-10.0
         ports:
         - containerPort: 8080
         readinessProbe:
@@ -255,7 +255,7 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: revanth77/revanth77:frontend-4.0
+          image: revanth77/revanth77:frontend-10.0
           ports:
           - containerPort: 8080
           readinessProbe:
@@ -364,7 +364,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: revanth77/revanth77:paymentservice-4.0
+        image: revanth77/revanth77:paymentservice-10.0
         ports:
         - containerPort: 50051
         env:
@@ -428,7 +428,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: revanth77/revanth77:productcatalogservice-4.0
+        image: revanth77/revanth77:productcatalogservice-10.0
         ports:
         - containerPort: 3550
         env:
@@ -492,7 +492,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: revanth77/revanth77:cartservice-4.0
+        image: revanth77/revanth77:cartservice-10.0
         ports:
         - containerPort: 7070
         env:
@@ -584,7 +584,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: revanth77/revanth77:loadgenerator-4.0
+        image: revanth77/revanth77:loadgenerator-10.0
         env:
         - name: FRONTEND_ADDR
           value: "frontend:80"
@@ -627,7 +627,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: revanth77/revanth77:currencyservice-4.0
+        image: revanth77/revanth77:currencyservice-10.0
         ports:
         - name: grpc
           containerPort: 7000
@@ -691,7 +691,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: revanth77/revanth77:shippingservice-4.0
+        image: revanth77/revanth77:shippingservice-10.0
         ports:
         - containerPort: 50051
         env:
